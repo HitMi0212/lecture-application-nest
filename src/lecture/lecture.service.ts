@@ -104,9 +104,6 @@ export class LectureService {
             LECTURE_ID: lectureId,
         });
 
-        const test = await this.applicationRepo.find();
-        console.log('test', test);
-
         if (applicationCount > lecture.LECTURE_LIMIT) {
             throw new BadRequestException(
                 '해당 특강의 정원이 가득 차 접수가 마감되었습니다.',
