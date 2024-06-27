@@ -36,7 +36,7 @@ describe('LectureController', () => {
         await lectureRepo.save({
             LECTURE_ID: 1,
             LECTURE_NAME: 'nestjs',
-            APPLICATION_DATE: '2024-06-28 10:00:00',
+            APPLICATION_DATE: '2024-06-28 01:00:00',
             LECTURE_LIMIT: 30,
         });
     });
@@ -52,7 +52,7 @@ describe('LectureController', () => {
             const lecture: Lecture = new Lecture();
             lecture.LECTURE_ID = 1;
             lecture.LECTURE_NAME = 'nestjs';
-            lecture.APPLICATION_DATE = '2024-06-28 10:00:00';
+            lecture.APPLICATION_DATE = '2024-06-28 01:00:00';
             lecture.LECTURE_LIMIT = 30;
             expectData.push(lecture);
 
