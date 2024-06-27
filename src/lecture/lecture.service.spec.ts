@@ -168,7 +168,6 @@ describe('LectureService', () => {
 
         // When
         const result = await Promise.allSettled(applyLectures);
-        console.log(result);
 
         // Then
         expect(result.filter((v) => v.status === 'fulfilled').length).toBe(
@@ -177,7 +176,5 @@ describe('LectureService', () => {
         expect(result.filter((v) => v.status === 'rejected').length).toBe(
             failExpected,
         );
-
-        // expect(result.length).toBe(lectureLimit);
     });
 });
